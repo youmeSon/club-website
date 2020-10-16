@@ -1,0 +1,242 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Roboto Mono";
+  margin: 0;
+  background-image: url("./img/alexander-popov-DPspiXW2zWg-unsplash.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: rgb(241, 206, 224);
+}
+
+nav a:hover {
+  color: rgb(245, 67, 96);
+}
+/* header*/
+.head {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2em;
+  background-color: rgba(10, 9, 9, 0.897);
+  color: whitesmoke;
+}
+.headquote {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+}
+.navBarToggle {
+  display: none;
+  position: absolute;
+  right: 1.2rem;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+.navBarToggle i {
+  color: rgb(14, 13, 13);
+}
+.head ul {
+  display: flex;
+}
+.head ul li {
+  list-style: none;
+  padding: 0 1em;
+  font-size: 1.25rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(211, 202, 209);
+}
+.logo {
+  padding: 1.5em;
+  display: flex;
+  align-items: center;
+}
+.logo i {
+  font-size: 2rem;
+}
+.logo span {
+  font-size: 1.5rem;
+  font-family: "Lobster", sans;
+  letter-spacing: 0.75rem;
+  padding-left: 2rem;
+}
+.navBar {
+  display: flex;
+}
+.navBar li {
+  list-style: none;
+  padding: 2.5em 1.5em;
+  display: flex;
+  align-items: center;
+}
+.navBar li:hover {
+  color: pink;
+  background-color: black;
+  width: 100%;
+  justify-content: center;
+}
+
+/*main*/
+main * {
+  position: relative;
+}
+.button {
+  text-decoration: none;
+  background-color: rgb(240, 183, 193);
+  border-radius: 0.25rem;
+  padding: 1.25rem 3.75rem;
+  text-align: center;
+  margin: 2rem;
+  display: block;
+  width: 15rem;
+  margin: 2rem auto;
+  font-size: 1.5rem;
+  font-family: "Sansita Swashed", sans;
+  color: rgb(235, 226, 226);
+  letter-spacing: 0.3rem;
+  overflow: hidden;
+  transition-property: background-color;
+  transition-duration: 1s;
+}
+.button:hover {
+  background-color: rgb(189, 73, 92);
+}
+.mainImg img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+.description {
+  padding: 0 15% 4rem 15%;
+  font-size: 1.7rem;
+  font-family: "Lobster", sans-serif;
+  word-spacing: 0.7rem;
+  margin: 5rem 0 0 0;
+  color: rgb(185, 186, 190);
+}
+.description2 {
+  padding: 0 15% 4rem 15%;
+  font-size: 1.7rem;
+  font-family: "Lobster", sans-serif;
+  word-spacing: 0.7rem;
+  margin: 30rem 0 0 0;
+  color: rgb(185, 186, 190);
+}
+
+.description .firstLetter {
+  float: left;
+  padding-right: 1.4rem;
+  font-family: "Sansita Swashed", serif;
+  font-size: 7.44rem;
+  color: #881344;
+  line-height: 0.87;
+}
+.description2 .firstLetter {
+  float: left;
+  padding-right: 1.4rem;
+  padding-bottom: 2rem;
+  font-family: "Sansita Swashed", serif;
+  font-size: 7.44rem;
+  color: #881344;
+  line-height: 0.87;
+}
+
+.galleryTitle {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.galleryTitle i {
+  padding-right: 0.2em;
+  font-size: 5rem;
+  color: rgb(185, 186, 190);
+}
+.galleryTitle span {
+  color: rgb(185, 186, 190);
+  display: flex;
+  align-items: center;
+  padding-left: 0.5em;
+  font-size: 2rem;
+}
+.gallery img {
+  display: block;
+  width: 30%;
+  height: 20rem;
+  margin: 1.5%;
+  float: left;
+}
+.lastPhoto {
+  width: 70%;
+  height: auto;
+  margin-left: 2rem;
+}
+footer {
+  background-color: rgba(10, 9, 9, 0.897);
+  margin-top: 1rem;
+  color: rgb(185, 186, 190);
+  font-size: 1.5rem;
+  padding: 1em;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+.footer li {
+  list-style: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .headquote {
+    font-size: 0.8rem;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+  nav .logo {
+    justify-content: left;
+  }
+  .navBar {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+  .navBar.active {
+    display: flex;
+  }
+  .navBar li {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem;
+  }
+  body {
+    width: 100%;
+  }
+  .navBarToggle {
+    display: block;
+  }
+  .gallery img {
+    width: 100%;
+    margin: 0;
+  }
+  .lastPhoto {
+    width: 100%;
+    margin: 0;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
